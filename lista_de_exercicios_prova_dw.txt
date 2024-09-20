@@ -1,0 +1,122 @@
+1)
+mantém versões dos códigos
+facilita trabalhar em equipe
+é capaz de retornar á versões anteriores do código
+
+2)
+git é um sistema de versionamento de código
+github é um sistema que usa o git como base
+
+3)
+html - marcação semantica e construção dos documentos.
+css - serve para layout animação, interface.
+javascript - interatividade com a página.
+
+4)
+tag - os comandos da linguagem (palavras chaves)
+elemento - componentes de um documento html, composto pelas tags e o texto sendo marcado
+atributo - são as características dos elementos
+
+5)
+<html>
+<head>
+
+<title>minha página<title>
+<meta charset='UTF-8'>
+</head>
+<body>
+<p>Estou por aqui</p>
+</body>
+</html>
+
+6)
+organização lógica dos protocolos de comunicação ao seu nível de abstração no qual cada presta um serviço para a camada posterior
+
+7)
+TCP e UDP
+o TCP é orientado a conexão e o UDP não
+o TCP também faz um esforço para entrega garantida e o UDP não
+
+8)
+a)Servidor
+* sempre ‘no ar’
+* endereço IP permanente
+Clientes
+* comunicam-se com o servidor
+* podem ter conexões intermitentes
+* podem ter endereços IP dinâmicos
+* não se comunicam diretamente entre si
+
+b) os clientes se comunicam entre si, pois não tem um servidor central
+
+9)
+processo é um programa rodando em um computador, ele é identificado através do número da porta
+
+10)
+security socket layer - ssl. é uma camada de segurança, que vai por cima do TCP//
+//camada que oferece segurança para os processos da camada de transporte
+
+11)
+2, o head e o body
+não, pois podem existir inúmeros descendentes dentro do body e do head
+
+12)
+<footer> - indicar o rodapé
+<h1> ao <h6> - inidcar cabeçalhos
+<p> - parágrafos
+<div> - contâiner genérico
+<span> - contâiner genérico inline
+<ul>
+<il>
+
+<del>
+<memi>
+<string>
+<a>
+<ins>
+
+13)
+<form>
+
+14)
+<a>
+
+15)
+<input>
+<checkbox>
+etc
+
+dar uma olhada depois
+
+16)
+a) determina o conjunto (ou conjuntos) ao qual o elemento pertence 
+b) é um identificador unívoco
+c) num elemento de formulário, é a variável cujo o valor vai ser atribuído quando o formulário for enviado enviado
+d) serve para esconder elementos que o usuário não precisa ver
+e) é um atributo que pode receber um código css, ele tem uma prioridade muito alta
+f) é para dar mais informações sobre um elemento
+
+17)
+é uma caracteristica da web, a capacidade de perder elementos e ainda sim entregar o conteúdo
+
+18)
+declaração - é o par chave-valor as duas separadas por 2 pontos
+seletor - define os elementos a quais elementos a regra será aplicada
+regra - composta por um seletor e um conjunto de declarações e esse conjunto de declarações estará entre chaves e separadas por ponto e vírgula
+
+19)
+seletor de classe seleciona os elementos daquela classe; .minhaclasse (seleciona os elementos daquela classe)
+seletor o elemento que tem aquele id; #meuid (seleciona o elemento com aquele id)
+
+20)
+padding - O espaço ao redor do conteúdo (ex.: ao redor do
+texto de um parágrafo)..
+border - A linha sólida do lado de fora do padding.
+margin - O espaço externo a um elemento.
+
+21)valores do atributo position do css
+
+static - posicionamento padrão.
+relative - movimentação em relação a posição padrão (inclusive sobrepondo outros elementos).
+absolute - retira o elemento do fluxo normal e o posiciona em relação ao relative ascendente mais próximo com position relative, e se não houver ao viewport
+fixed - retira o elemento do fluxo normal e o posiciona relativamente a viewport

@@ -1,0 +1,37 @@
+5) <html>
+   <head>
+     <title> Minha pagina </tittle>
+     <meta chanset = 'utf-8'>
+   </head>
+   <body>
+      <p> Estou por aqui <p>
+   </body>
+   </html>
+ 
+6) Uma pilha de protocolos é uma organização logica de acordo com seu nível de abstração de a cordo com o seu nível inferior.
+
+7) TCP e UTP, TCP e orientado a conexão e o UTP não.
+
+8) cliente-servidor, a informação vai de servidor ao cliente, o mesmo responde primeiro, o servidor tem IP fixo e os clientes não se comunicação, peer-peer, cliente com cliente, os clientes se comunicam e não tem IP fixa.
+
+9) Um processo no contexto do desenvolvimento de aplicação de internet, Um programa rodando um computador na rede e identifica o numero da porta.
+
+10) Um SSl é uma camada de segurança.
+
+11) Head e body, não, por que pode fazer vários descendentes dentro do body e head, pode importa infinitos parágrafos, links e etc.
+
+12) Foot, h1...h6, p, div conteúdo genérico, e spam / menu, del, ins, Strong e a, explicar.
+
+13) Seria o form.
+
+14) Seria o elemento 'a' que cria os hiperlinks.
+
+15) Input, textarea, button, select, checkbox, explicar.
+
+16) Class / determina o conjunto a qual elemento pertence, id / e um identificador especifico para certo elemento, name / definir o nome de um elemento e para almacenar e um servidor, hidden / esconder elementos que o usuario nã precisa ver, style / Um atributo de css dentro do codigo HTML, tittle / Para dar mias informações a aquele elemento.
+
+17) Degradação graciosa ou degradação elegante e uma filosofia de design e uma estrategia de design, tambem uma caracteristica da web que perde elemento e entrega o ja perdido.
+
+18) Declaração css, propiedade e valor separados de dos pontos, o seletor define a quais elementos a regra sera aplicada e regra e a estrutura composta por um seletor e um conjunto de declaracões separadas por ponto e virgula e entre chaves.
+
+19) O seletor de classe e seleciona os elementos da classe e o de id seleciona o elemnto com aquele id, .minha-classe e #meu-id

@@ -1,0 +1,29 @@
+Estratégia de execução:
+
+Compilada - O compilador gera código de maquina.
+
+Interpretadas - Interpreta de linha a linha.
+
+Transpiler, traduz o código fonte para outra linguagem e garantir a compatabilidade entre as mesmas.
+
+Variáveis: Um nome que recebe um valor ou um espaço na memoria do computador onde se armazena dados.
+
+
+/*
+comentário                 //comentário
+*/
+
+
+Um operador e um símbolo que produz alguma funcionabilidade.
+
+Incremento(++): Aumenta o valor em 1 ao valor relacionado.
+
+Decremento(--): Diminui o valor em 1 ao valor relacionado.
+
+"let resultado = (condicao)? (retorno se verdade): (retorno se falso);"
+
+
+
+
+
+

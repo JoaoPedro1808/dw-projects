@@ -1,50 +1,59 @@
 const params = new URLSearchParams(window.location.search)
 const id = params.get("id")
 
+console.log(params.get("id"))
+
 const pega_json = async (caminho) => {
+
     const resposta = await fetch(caminho);
     const dados = await resposta.json();
     return dados;
+
 }
 
-const body = document.body;
-
-const montaPagina = (dados) => {
+const montapagina = (dados) => {
     const body = document.body;
+    body.innerHTML = "";
 
-    const nome = document.createElement('h1');
-    nome.innerHTML = dados.nome;
-    body.appendChild(nome);
+    const nome = document.createElement('h1')
+    nome.innerHTML = dados.nome
+    body.appendChild(nome)
+
+    const imagem = document.createElement('img')
+    imagem.src = dados.imagem
+    body.appendChild(imagem)
+
+    const descri = document.createElement("p");
+    descri.innerHTML = dados.detalhes
+    body.appendChild(descri);
     
-    const imagem = document.createElement('img');
-    imagem.src = dados.imagem;
-    body.appendChild(imagem);
+    const posi = document.createElement("p");
+    posi.innerHTML = dados.posicao
+    body.appendChild(posi);
 
-    const elenco = document.createElement('h2');
-    elenco.innerHTML = dados.elenco;
-    body.appendChild(elenco);
-
-    const posicao = document.createElement('h2');
-    posicao.innerHTML = dados.posicao;
-    body.appendChild(posicao);
-
-    const naturalidade = document.createElement('p');
-    naturalidade.innerHTML = dados.naturalidade;
-    body.appendChild(naturalidade);
-
-    const nascimento = document.createElement('p');
-    nascimento.innerHTML = dados.nascimento;
-    body.appendChild(nascimento)
-
-    const detalhes = document.createElement('p');
-    detalhes.innerHTML = dados.detalhes;
-    body.appendChild(detalhes);
-
-    
 }
 
-pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
-    (r) => montaPagina(r)
-);
+if (sessionStorage.getItem('logado')){
 
-console.log(params.get("id"));
+pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then( (r) => montapagina(r));
+
+}else{
+document.body.innerHTML = "<h1>Bobão errou a senha kkkkkkkkkk</h1>"
+
+}
+const achaCookie = ( chave ) =>{
+
+    const lista = document.cookie.split("; ");
+    const par = lista.find(
+        ( e ) => e.startsWith(`${chave}=`)
+    )
+
+    return par.split("=")[1]
+}
+
+console.log('altura: ', achaCookie('altura'));
+
+const dadosSessionStorage = sessionStorage.getItem('dados');
+const obj = JSON.parse(dadosSessionStorage)
+
+console.log('n de jogos:', obj.njogos)
